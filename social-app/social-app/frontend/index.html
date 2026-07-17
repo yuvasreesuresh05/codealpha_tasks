@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiniSocial — Feed</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app-header"></div>
+
+<main class="container">
+  <div class="feed-toggle">
+    <button id="tab-global" class="active" data-tab="global">Global</button>
+    <button id="tab-following" data-tab="following">Following</button>
+  </div>
+
+  <div class="composer" id="composer" style="display:none;">
+    <textarea id="composer-text" placeholder="What's on your mind?" maxlength="600"></textarea>
+    <div class="composer-footer">
+      <span class="char-count" id="char-count">0/500</span>
+      <button id="composer-submit" disabled>Post</button>
+    </div>
+  </div>
+
+  <div id="feed-list"></div>
+  <button id="load-more-btn" class="btn-secondary load-more" style="display:none;">Load more</button>
+</main>
+
+<script src="js/auth.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/feed.js"></script>
+</body>
+</html>
