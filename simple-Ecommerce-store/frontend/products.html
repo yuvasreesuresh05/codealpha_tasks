@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🛒 ShopEasy</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="featured">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="card">
+            <img src="images/headphones.jpg" alt="Headphones" onerror="this.src='https://via.placeholder.com/260x200'">
+            <h3>Wireless Headphones</h3>
+            <p>₹1,999</p>
+            <a href="product.html?id=headphones">
+                <button>View Details</button>
+            </a>
+            <button onclick="addToCart('Wireless Headphones', 1999)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/smartwatch.jpg" alt="Smart Watch" onerror="this.src='https://via.placeholder.com/260x200'">
+            <h3>Smart Watch</h3>
+            <p>₹2,499</p>
+            <a href="product.html?id=smartwatch">
+                <button>View Details</button>
+            </a>
+            <button onclick="addToCart('Smart Watch', 2499)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/shoes.jpg" alt="Shoes" onerror="this.src='https://via.placeholder.com/260x200'">
+            <h3>Running Shoes</h3>
+            <p>₹3,299</p>
+            <a href="product.html?id=shoes">
+                <button>View Details</button>
+            </a>
+            <button onclick="addToCart('Running Shoes', 3299)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/260x200" alt="Backpack">
+            <h3>Travel Backpack</h3>
+            <p>₹1,499</p>
+            <a href="product.html?id=backpack">
+                <button>View Details</button>
+            </a>
+            <button onclick="addToCart('Travel Backpack', 1499)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/260x200" alt="Sunglasses">
+            <h3>Polarized Sunglasses</h3>
+            <p>₹899</p>
+            <a href="product.html?id=sunglasses">
+                <button>View Details</button>
+            </a>
+            <button onclick="addToCart('Polarized Sunglasses', 899)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/260x200" alt="Watch">
+            <h3>Classic Watch</h3>
+            <p>₹4,999</p>
+            <a href="product.html?id=watch">
+                <button>View Details</button>
+            </a>
+            <button onclick="addToCart('Classic Watch', 4999)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ShopEasy | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🛒 ShopEasy</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <form class="form-box" id="checkout-form">
+        <h2>Checkout</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Delivery Address" required>
+        <input type="text" placeholder="City" required>
+        <input type="text" placeholder="Pincode" required pattern="[0-9]{5,6}" title="Please enter a valid pincode (5-6 digits)">
+        <input type="tel" placeholder="Mobile Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+        <select required style="width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:5px;">
+            <option value="">Select Payment Method</option>
+            <option value="cod">Cash on Delivery</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="upi">UPI</option>
+        </select>
+        <button type="submit">Place Order</button>
+        <p><a href="cart.html">← Back to Cart</a></p>
+    </form>
+</div>
+
+<footer>
+    <p>© 2026 ShopEasy | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

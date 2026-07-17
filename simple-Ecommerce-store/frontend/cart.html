@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🛒 ShopEasy</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart <span id="cart-badge" style="background: #ff9800; color: white; border-radius: 50%; padding: 2px 8px; font-size: 12px; margin-left: 5px; display: none;">0</span></a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+</header>
+
+<section class="featured">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <h2 id="total">Total: ₹0</h2>
+    <br>
+    <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+        <button onclick="clearCart()" style="background:#f44336; padding:12px 30px; border:none; color:white; border-radius:5px; cursor:pointer;">
+            Clear Cart
+        </button>
+        <a href="checkout.html">
+            <button style="background:#4CAF50; padding:12px 30px; border:none; color:white; border-radius:5px; cursor:pointer;">
+                Proceed to Checkout
+            </button>
+        </a>
+        <a href="products.html">
+            <button style="background:#2196f3; padding:12px 30px; border:none; color:white; border-radius:5px; cursor:pointer;">
+                Continue Shopping
+            </button>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ShopEasy | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

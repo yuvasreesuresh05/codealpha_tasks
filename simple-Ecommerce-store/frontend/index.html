@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🛒 ShopEasy</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to ShopEasy</h1>
+    <p>Discover the latest fashion, electronics, and accessories at the best prices.</p>
+    <a href="products.html">
+        <button>Shop Now</button>
+    </a>
+</section>
+
+<section class="featured">
+    <h2>Featured Products</h2>
+    <div class="products">
+        <div class="card">
+            <img src="images/headphones.jpg" alt="Wireless Headphones" onerror="this.src='https://via.placeholder.com/260x200'">
+            <h3>Wireless Headphones</h3>
+            <p>₹1,999</p>
+            <button onclick="addToCart('Wireless Headphones', 1999)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/smartwatch.jpg" alt="Smart Watch" onerror="this.src='https://via.placeholder.com/260x200'">
+            <h3>Smart Watch</h3>
+            <p>₹2,499</p>
+            <button onclick="addToCart('Smart Watch', 2499)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/shoes.jpg" alt="Running Shoes" onerror="this.src='https://via.placeholder.com/260x200'">
+            <h3>Running Shoes</h3>
+            <p>₹3,299</p>
+            <button onclick="addToCart('Running Shoes', 3299)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ShopEasy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
